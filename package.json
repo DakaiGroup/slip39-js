@@ -4,7 +4,8 @@
   "description": "The javascript implementation of the SLIP39 for Shamir's Secret-Sharing for Mnemonic Codes.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "npx babel src --out-dir dist && ./sed.sh"
   },
   "author": "Pal Dorogi \"iLap\" <pal.dorogi@gmail.com>",
   "license": "MIT",
@@ -21,6 +22,9 @@
     "SSS"
   ],
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "babel-plugin-transform-bigint": "1.0.9"
   }
 }
