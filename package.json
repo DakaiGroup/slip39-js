@@ -2,10 +2,10 @@
   "name": "slip39",
   "version": "0.1.7",
   "description": "The javascript implementation of the SLIP39 for Shamir's Secret-Sharing for Mnemonic Codes.",
-  "main": "index.js",
+  "main": "dist/slip39.js",
   "scripts": {
-    "test": "mocha",
-    "build": "npx babel src --out-dir dist && ./sed.sh"
+    "build": "npx babel src --out-dir dist && ./sed.sh",
+    "test": "mocha"
   },
   "author": "Pal Dorogi \"iLap\" <pal.dorogi@gmail.com>",
   "license": "MIT",
@@ -22,9 +22,31 @@
     "SSS"
   ],
   "devDependencies": {
-    "mocha": "^6.2.0",
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
-    "babel-plugin-transform-bigint": "1.0.9"
+    "babel-plugin-transform-bigint": "1.0.9",
+    "mocha": "^6.2.0"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "path": "path-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "path": "path-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
   }
 }

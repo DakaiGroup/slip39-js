@@ -1,5 +1,5 @@
 module.exports = {
-    "plugins": [
-      "babel-plugin-transform-bigint",
-    ]
-  }
+  "plugins": [
+    "babel-plugin-transform-bigint",
+  ]
+}

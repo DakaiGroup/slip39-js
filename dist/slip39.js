@@ -63,7 +63,7 @@ var maybeJSBI = {
     return typeof a === "object" ? JSBI.bitwiseNot(a) : ~a;
   }
 };
-import JSBI from "./jsbi.mjs";
+const JSBI = require("../jsbi-cjs.js");
 
 /* eslint-disable radix */
 const slipHelper = require('./slip39_helper.js');

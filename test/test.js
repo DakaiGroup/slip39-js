@@ -1,5 +1,5 @@
 const assert = require('assert');
-const slip39 = require('../src/slip39');
+const slip39 = require('../dist/slip39');
 
 const MASTERSECRET = 'ABCDEFGHIJKLMNOP';
 const MS = MASTERSECRET.slip39EncodeHex();
