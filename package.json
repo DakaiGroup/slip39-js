@@ -4,7 +4,7 @@
   "description": "The javascript implementation of the SLIP39 for Shamir's Secret-Sharing for Mnemonic Codes.",
   "main": "dist/slip39.js",
   "scripts": {
-    "build": "npx babel src --out-dir dist && ./sed.sh",
+    "build": "",
     "test": "mocha"
   },
   "author": "Pal Dorogi \"iLap\" <pal.dorogi@gmail.com>",
